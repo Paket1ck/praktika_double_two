@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>%=title %</title>
+</head>
+<body>
+    <h1><%=title %> в EJS</h1>
+    <% if(fioVisible) {%>
+    <h3>ФИО</h3>
+        <ul>
+            <% for (var i=0; i<fio.length;i++) {%>
+                <li><%=fio[i] %></li>
+            <%} %>
+        </ul>
+        <% }else {%>
+            <h3>ФИО нету</h3>
+        <%} %>
+</body>
+</html>
